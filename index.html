@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CRUD OPERATION</title>
+</head>
+    <body>
+        <table>
+            <tr>
+                <td>
+                    <form autocomplete="off" onsubmit="onFormSubmit()">
+                        <div>
+                            <label for="LoginID">Login ID</label>
+                            <input type="text" id="LoginID">
+                        </div>
+                        <div>
+                            <label for="Name">Name</label>
+                            <input type="text" id="Name">
+                        </div>
+                        <div>
+                            <label for="Phone">Phone</label>
+                            <input type="phone"  id="Phone">
+                        </div>
+    
+                        <div class="form_action--button">
+                            <input type="submit" value="Submit">
+                            <input type="reset" value="Reset">
+                        </div>
+                    </form>
+    
+                    <td>
+                        <table class="list" id="storeList">
+                            <thead>
+                                <tr>
+                                    <th>Login ID</th>
+                                    <th>Name</th>
+                                    <th>Phone</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+    
+                            </tbody>
+                        </table>
+                    </td>
+                </td>
+            </tr>
+        </table>
+
+            <table>
+                <tr>
+                    <td>
+                        <form autocomplete="off" onsubmit="onFormSubmitInvoice()">
+                            <div>
+                                <label for="InvoiceNumber">Invoice Number</label>
+                                <input type="text" id="InvoiceNumber">
+                            </div>
+                            <div>
+                                <label for="CustomerName">Customer Name</label>
+                                <input type="text" id="CustomerName">
+                            </div>
+                            <div>
+                                <label for="Date">Date</label>
+                                <input type="date"  id="Date">
+                            </div>
+        
+                            <div class="form_action--button">
+                                <input type="submit" value="Submit">
+                                <input type="reset" value="Reset">
+                            </div>
+                        </form>
+        
+                        <td>
+                            <table class="list" id="storeInvoice">
+                                <thead>
+                                    <tr>
+                                        <th>Invoice number</th>
+                                        <th>Customer Name</th>
+                                        <th>Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+        
+                                </tbody>
+                            </table>
+                        </td>
+                    </td>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <td>
+    
+                        <form autocomplete="off" onsubmit="onFormSubmitProduct()">
+                            <div>
+                                <label for="Quantity">Quantity</label>
+                                <input type="number" id="Quantity">
+                            </div>
+                            <div>
+                                <label for="UnitPrice">Unit Price</label>
+                                <input type="text" id="UnitPrice">
+                            </div>
+                            <div>
+                                <label for="ProductName">Product Name</label>
+                                <input type="text"  id="ProductName">
+                            </div>
+        
+                            <div class="form_action--button">
+                                <input type="submit" value="Submit">
+                                <input type="reset" value="Reset">
+                            </div>
+                        </form>
+        
+                        <td>
+                            <table class="list" id="Product">
+                                <thead>
+                                    <tr>
+                                        <th>Quantity</th>
+                                        <th>Unit Price</th>
+                                        <th>Product Name</th>
+                                        <th>Total Value INR</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+        
+                                </tbody>
+                            </table>
+                        </td>
+                    </td>
+                </tr>
+            </table>
+        <script type="text/javascript" src="Crud.js"></script>
+    </body>
+</html>
